@@ -13,7 +13,7 @@ class Cult
         @@all << self
     end
 
-    def followers
+    def blood_oaths
       BloodOath.all.collect{|b| b.cult == self}
     end
 
